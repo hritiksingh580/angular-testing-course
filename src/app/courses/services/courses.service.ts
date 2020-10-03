@@ -3,6 +3,10 @@
 import {Injectable} from "@angular/core";
 import {HttpClient, HttpParams} from "@angular/common/http";
 import {Observable} from "rxjs";
+<<<<<<< HEAD
+=======
+import {Course} from "../model/course";
+>>>>>>> c85416db4e38c2afd0895bde7d3034e8bbb6419d
 import {map} from "rxjs/operators";
 import {Lesson} from "../model/lesson";
 import {Course} from '../model/course';
@@ -26,6 +30,10 @@ export class CoursesService {
             );
     }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> c85416db4e38c2afd0895bde7d3034e8bbb6419d
     saveCourse(courseId:number, changes: Partial<Course>): Observable<Course> {
         return this.http.put<Course>(`/api/courses/${courseId}`, changes);
     }
